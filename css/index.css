@@ -1,0 +1,98 @@
+body
+{
+	position: absolute;
+	width : 100%;
+	height : 100%;
+}
+
+#content-main
+{
+	background-color : rgba( 100, 100, 0, .8);
+	width : 100%;
+	height : 70%;
+	display: block;
+	padding : 10px;
+}
+
+.tabPane
+{
+	height : 90%;
+}
+
+.tabPane .tabHeads
+{
+	height : 30px;
+}
+
+.tabPane .tab-head
+{
+	width : 200px;
+	color : white;
+	cursor : pointer;
+	display : inline-block;
+	vertical-align : middle;
+	border-left : 2px dashed white;
+	float : left;
+	margin-right : 5px;
+}
+
+.tabPane .tab-head, .tabPane .tab-selected
+{
+	background-color : rgba( 0, 0, 0, .8 );
+}
+
+.tabPane .tab-head-newtab
+{
+	width : 70px;
+	text-align : center;
+}
+
+.tabPane .tab-head-newtab, .tabPane .tab-newtab.tab-selected
+{
+	background-color : rgba( 0, 100, 100, 1 );
+	z-index : 30;
+}
+
+.tabPane .tab-head-newtab #txtTabTitle
+{
+	display: none;
+	text-align: center;
+	border : none;
+}
+
+.tabPane .tab-head-newtab #txtTabTitle:focus
+{
+	box-shadow : 0px 0px 4px rgba( 0, 100, 140, .9 ) inset;
+}
+
+.tabPane .tab-head-newtab.tab-head-selected
+{
+	width : auto;
+	height : auto;
+	padding : 3px;
+}
+
+.tabPane .tab-head-newtab.tab-head-selected #txtTabTitle
+{
+	display: block;
+}
+
+.tabPane .tab-head-newtab.tab-head-selected .title
+{
+	display: none;
+}
+
+.tabPane .tab-head-grupos, .tabPane .tab-grupos.tab-selected
+{
+   background-color : rgba( 120, 10, 0, .8 );	
+}
+
+.tabPane .tab-head-usuarios, .tabPane .tab-usuarios.tab-selected
+{
+	background-color : rgba( 10, 120, 0, .8 );	
+}
+
+.tabPane .tab-head-tareas, .tabPane .tab-tareas.tab-selected
+{
+		background-color : rgba( 0, 10, 120, .8 );	
+}
